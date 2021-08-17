@@ -1,40 +1,82 @@
-/* BODY */
-
-body {
-  margin:0;
-  background: linear-gradient(#eee,#777);
-  min-height: 100vh;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
-
-/* TEXT */
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 800;
-    font-size: xx-large;
-  }
-
-/* BUTTONS */
-
-.btn-primary {
-  width: 300px; 
-  height: 70px;
-  border-radius: 2em;
-  background-color: rgb(206, 10, 10);
-  cursor: pointer;
-  transition: background-color 1s;
-  border-color: rgb(0, 0, 0);
-  box-shadow: 0 15px 20px rgb(0, 0, 0);
+.header{
+  height: 100vh;
+  width: 100%;
+  padding: 0 8%;
+  background-color: bisque;
+  position:relative;
 }
-
-.btn-primary:hover {
-  background-color: rgb(69, 155, 236);
-  border-color: rgb(0, 0, 0);
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.btn-primary p {
-  text-align: center;
-  font-size: 0.85em;
-  font-weight: bold;
+.logo{
+  width: 140px;
+}
+.nav-links{
+  padding: 28px 0;
+}
+.btn-primary{
+  background: #FF3D00;
   color: #fff;
-  line-height: 1.6em;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  max-width: 900px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content h1{
+  font-size: 65px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.content form{
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+}
+.content form input{
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 28px;
+  font-size: 18px;
+}
+.category-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.category{
+  width: 80px;
+  height: 80px;
+  margin: 0 25px;
+  text-align: center;
+  align-items: flex-start
+}
+.weather{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; position: absolute;
+  left: 50%;
+  top: 110%;
+  width: 90%;
+  max-width: 900px;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
