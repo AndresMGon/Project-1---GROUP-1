@@ -1,0 +1,40 @@
+/* BODY */
+
+body {
+  margin:0;
+  background: linear-gradient(#eee,#777);
+  min-height: 100vh;
+}
+
+/* TEXT */
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
+  }
+
+/* BUTTONS */
+
+.btn-primary {
+  width: 300px; 
+  height: 70px;
+  border-radius: 2em;
+  background-color: rgb(206, 10, 10);
+  cursor: pointer;
+  transition: background-color 1s;
+  border-color: rgb(0, 0, 0);
+  box-shadow: 0 15px 20px rgb(0, 0, 0);
+}
+
+.btn-primary:hover {
+  background-color: rgb(69, 155, 236);
+  border-color: rgb(0, 0, 0);
+}
+
+.btn-primary p {
+  text-align: center;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.6em;
+}
